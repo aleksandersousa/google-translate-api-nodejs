@@ -34,7 +34,7 @@ The server runs on localhost on port 5000.
 
 A example of valid url is: ```https://localhost:5000/api/v1/translation?sourceLang=en&targetLang=pt&text=test```
 
-The query string must to be like this:
+**_- The query string must to be like this:_**
 
     {
         "sourceLang": "en"
@@ -44,7 +44,7 @@ The query string must to be like this:
 
  You may use sourceLang: "auto" to let google choose for you.
 
-OUTPUT
+**_OUTPUT:_**
 
     {
         "translation":  "teste",
@@ -55,3 +55,5 @@ OUTPUT
         ], //synonyms only avaible for shorter querys
         "originalResponse": [] //google original json response is an nested array too big to put here.
     }
+
+**- WARNING: _parallel requests cannot be made because it's necessary to wait for selenium load the page to jsdom scrape the json file. Wait to the request finish for the correct result._**
