@@ -15,7 +15,7 @@
     "translate",
     "translator",
     "google",
-    "translate",
+    "proxy",
     "api",
     "free",
     "language"
@@ -26,13 +26,13 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "express": "^4.17.1",
     "jsdom": "^16.2.0",
     "selenium-webdriver": "^4.0.0-alpha.5"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
