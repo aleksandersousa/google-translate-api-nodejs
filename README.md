@@ -15,7 +15,7 @@ The api use selenium to scrape the window variable TKK to generate the hash code
 
 ## Setup
 
-Make sure you have npm properly installed.
+Check that the npm and firefox are correctly set, that the geckodriver has been downloaded and that it is set in the environment.
 
 Follow the instructions to use the server:
 
