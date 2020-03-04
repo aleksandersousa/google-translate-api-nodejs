@@ -1,15 +1,30 @@
 {
   "name": "free-google-translate-api-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "A free google translate api that don't have request limits!",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "babel": "babel-node src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleksandersousa/google-translate-api-nodejs.git"
+  },
+  "keywords": [
+    "translate",
+    "translator",
+    "google",
+    "translate",
+    "api",
+    "free",
+    "language"
+  ],
+  "author": {
+    "name": "Aleksander Santos Sousa",
+    "email": "aleksander-ssousa@outlook.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "jsdom": "^16.2.0",
@@ -19,7 +34,6 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
