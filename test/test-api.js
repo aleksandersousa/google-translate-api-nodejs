@@ -1,34 +1,35 @@
+/* eslint-disable no-undef */
 const expect = require('chai').expect
 const request = require('request')
 
 describe('Status and content', () => {
   describe('Main page', () => {
-    const rightUrl =
+    const validUrl =
     'http://localhost:5000/api/v1/translation?sourceLang=en&targetLang=pt&text=test'
 
     it('response status', done => {
-      request(rightUrl, (_error, response, body) => {
+      request(validUrl, (_error, response, body) => {
         expect(response.statusCode).to.equal(200)
         done()
       })
     })
 
     it('json translation content', done => {
-      request(rightUrl, (_error, response, body) => {
+      request(validUrl, (_error, response, body) => {
         expect(JSON.parse(body).translation).to.equal('teste')
         done()
       })
     })
 
     it('json synonyms content', done => {
-      request(rightUrl, (_error, response, body) => {
+      request(validUrl, (_error, response, body) => {
         expect(JSON.parse(body).synonyms).to.be.a('array')
         done()
       })
     })
 
     it('json originalResponse content', done => {
-      request(rightUrl, (_error, response, body) => {
+      request(validUrl, (_error, response, body) => {
         expect(JSON.parse(body).originalResponse).to.be.a('array')
         done()
       })

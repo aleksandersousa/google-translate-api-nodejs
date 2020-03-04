@@ -8,7 +8,7 @@ export function startServer (translate) {
     if (err) {
       return console.log(`failed to open server with error: ${err}`)
     }
-    console.log('server running')
+    console.log('server running on port 5000')
   })
 
   app.get('/api/v1/translation', (req, res) => {
