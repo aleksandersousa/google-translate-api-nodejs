@@ -30,7 +30,7 @@ The server runs on localhost on port 5000.
 
 **NOTE: Only GET requests are supported.**
 
-**NOTE2: The limit of the text parameter are 7400 characters.**
+**NOTE2: The limit of the text parameter are 5000 characters.**
 
 A example of valid url is: ```https://localhost:5000/api/v1/translation?sourceLang=en&targetLang=pt&text=test```
 
