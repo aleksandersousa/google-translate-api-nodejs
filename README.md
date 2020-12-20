@@ -32,6 +32,8 @@ The server runs on localhost on port 5000.
 
 **NOTE2: The limit of the text parameter are 5000 characters.**
 
+**NOTE3: Make sure that you're using firefox geckodriver and the geckodriver is in the PATH.**
+
 A example of valid url is: ```https://localhost:5000/api/v1/translation?sourceLang=en&targetLang=pt&text=test```
 
 **_- The query string must to be like this:_**

@@ -1,5 +1,6 @@
 import { JSDOM } from 'jsdom'
 import { stringify } from 'querystring'
+
 import { openBrowser } from './browser/init-browser'
 import { getTKK } from './browser/tkk-scrapper'
 import { calcHash } from './util/tk-hash'

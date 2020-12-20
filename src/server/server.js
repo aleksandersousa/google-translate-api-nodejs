@@ -34,6 +34,7 @@ export function startServer (translate) {
         })
       }
     }
+
     getData()
   })
 }
